@@ -1,4 +1,4 @@
- @mixin btn-base{
+@mixin btn-base{
     padding: 0.25rem 1.5rem;
     border-radius: 0.25rem;
 }
@@ -9,7 +9,6 @@
 }
 
 $color-main: #0075FF;
-
 .btn-main {
     @include btn-base();
     background-color: $color-main;
@@ -40,21 +39,29 @@ $color-main: #0075FF;
         @extend .btn-main;
         @include btn-sm-modify();
     }
-} 
+}
 
-.main-menu{
+.main-menu {
     margin-bottom: 0;
     li{
         font-size: 0.75rem;
         list-style: none;
         display: inline;
         a{
-            color: #000;
+            color: #000000;
             text-decoration: none;
-
-            &:hover {
+            
+            &:hover{
                 text-decoration: underline;
             }
         }
     }
+}
+
+.icon-sm {
+    font-size: 1rem;
+    padding: 0.4rem 0.65rem;
+    color: $color-main;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #000000;
 }
